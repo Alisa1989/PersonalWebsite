@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css2?family=Krona+One&display=swap);
+
+//VARIABLES
+$krona-one: 'Krona One', sans-serif;
+
+$mainGreen: #3EB650;
+$secondaryBlue: #758e92;
+$mainOrange: #FFA101;
+$mainBlue: #31525B;
+$mainCream: #FAE6B1;
+
+$NavHoverBG: $mainCream;
+$NavHoverTX:  $mainBlue;
+//MIXINS
+@mixin quickLinks {
+  .links {
+    display: flex;
+    align-items: center;
+  }
+    a {
+    color: $mainOrange;
+    padding: 5px;
+    text-decoration: none; 
+  }
+a:hover {
+    color: $NavHoverTX;
+    background-color: $NavHoverBG;
+  }
+}
+//STYLING
+html {
+  background-color: $mainBlue;
+}
+.App {
+  text-align: center;
+  background-color:$mainBlue;
+}
+h1 {
+  color: $mainOrange;
+}
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: $mainBlue;
+  padding: 10px;
+  .title {
+    align-self: center;
+    font-family: $krona-one;
+    font-weight: normal;
+  }
+  @include quickLinks;
+}
+.Footer {
+  display: flex;
+  justify-content: center;
+  background-color: $mainBlue;
+  padding: 10px;
+  @include quickLinks;
+}
