@@ -52,8 +52,13 @@ h1 {
 }
 .Footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: $mainBlue;
   padding: 10px;
-  @include quickLinks;
+
+
+  .links {
+    @include quickLinks;
+
+  }
 }
