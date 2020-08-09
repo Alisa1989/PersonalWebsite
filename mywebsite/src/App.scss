@@ -1,12 +1,12 @@
-@import url(https://fonts.googleapis.com/css2?family=Krona+One&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
 //VARIABLES
-$krona-one: 'Krona One', sans-serif;
+$importedFont: 'Montserrat', sans-serif;
 
 $mainGreen: #3EB650;
 $secondaryBlue: #758e92;
-$mainOrange: #FFA101;
-$mainBlue: #31525B;
+$mainOrange: #000000;
+$mainBlue: #FFFFFF;
 $mainCream: #FAE6B1;
 
 $NavHoverBG: $mainCream;
@@ -16,6 +16,7 @@ $NavHoverTX:  $mainBlue;
   .links {
     display: flex;
     align-items: center;
+    
   }
     a {
     color: $mainOrange;
@@ -37,15 +38,17 @@ html {
 }
 h1 {
   color: $mainOrange;
+  font-weight: bold;
 }
 .NavBar {
   display: flex;
   justify-content: space-between;
   background-color: $mainBlue;
-  padding: 10px;
+  padding: 1% 5% 1% 5%;
+  border-bottom: 1px solid black;
   .title {
     align-self: center;
-    font-family: $krona-one;
+    font-family: $importedFont;
     font-weight: normal;
   }
   @include quickLinks;
@@ -57,8 +60,7 @@ h1 {
   padding: 10px;
 
 
-  .links {
     @include quickLinks;
 
-  }
+  
 }
