@@ -1,12 +1,12 @@
-@import url(https://fonts.googleapis.com/css2?family=Krona+One&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
 //VARIABLES
-$krona-one: 'Krona One', sans-serif;
+$importedFont: 'Montserrat', sans-serif;
 
 $mainGreen: #3EB650;
 $secondaryBlue: #758e92;
 $mainOrange: #FFA101;
-$mainBlue: #31525B;
+$mainBlue: #FFFFFF;
 $mainCream: #FAE6B1;
 
 $NavHoverBG: $mainCream;
@@ -45,7 +45,7 @@ h1 {
   padding: 10px;
   .title {
     align-self: center;
-    font-family: $krona-one;
+    font-family: $importedFont;
     font-weight: normal;
   }
   @include quickLinks;
