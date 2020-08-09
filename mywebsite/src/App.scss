@@ -5,7 +5,7 @@ $importedFont: 'Montserrat', sans-serif;
 
 $mainGreen: #3EB650;
 $secondaryBlue: #758e92;
-$mainOrange: #FFA101;
+$mainOrange: #000000;
 $mainBlue: #FFFFFF;
 $mainCream: #FAE6B1;
 
@@ -16,6 +16,7 @@ $NavHoverTX:  $mainBlue;
   .links {
     display: flex;
     align-items: center;
+    
   }
     a {
     color: $mainOrange;
@@ -37,12 +38,14 @@ html {
 }
 h1 {
   color: $mainOrange;
+  font-weight: bold;
 }
 .NavBar {
   display: flex;
   justify-content: space-between;
   background-color: $mainBlue;
-  padding: 10px;
+  padding: 1% 5% 1% 5%;
+  border-bottom: 1px solid black;
   .title {
     align-self: center;
     font-family: $importedFont;
@@ -57,8 +60,7 @@ h1 {
   padding: 10px;
 
 
-  .links {
     @include quickLinks;
 
-  }
+  
 }
